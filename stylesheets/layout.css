@@ -1,0 +1,872 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vw;
+  margin: 0;
+  font-family:
+    'Gabin',
+    'Unbounded' sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+/* body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 420.859vw;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.2;
+} */
+
+.section-1 {
+  position: relative;
+  overflow: hidden;
+  height: 69.531vw;
+  width: 100%;
+  background-image: url('../images/background-1.svg');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column; /* ставим друг под другом */
+
+  align-items: center;
+}
+/* Заголовки */
+h1,
+h2 {
+  font-family: 'Gabin';
+  display: inline-block; /* чтобы transform работал */
+  text-align: center;
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.25);
+  animation: soft-pulse 6s infinite alternate ease-in-out; /* медленная плавная пульсация */
+}
+
+/* Размеры и цвета */
+h1 {
+  font-size: 11.875vw;
+  color: #ded1f8;
+  margin-top: 4vw;
+}
+
+h2 {
+  font-size: 4.896vw;
+  color: #b7abf1;
+}
+
+@keyframes soft-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  } /* очень мягкое увеличение */
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Каждая буква */
+.glow-text span {
+  transition:
+    0.3s ease color,
+    0.3s ease text-shadow;
+}
+
+/* Постоянное лёгкое затемнение букв */
+.glow-text span.dim {
+  color: #ded1f85d;
+  text-shadow: none;
+}
+.section-1 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  margin-top: 8.7vw;
+  width: 64vw;
+  height: auto;
+  animation: logoGlow 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 0 rgba(120, 170, 255, 0.4));
+}
+
+.stone {
+  position: absolute;
+  height: auto;
+  transform: translateZ(0);
+  transform-origin: 50% 50%;
+  will-change: transform;
+  animation: stoneSwing 7s ease-in-out infinite;
+}
+
+.stone-1 {
+  width: 36vw;
+  bottom: 38vw;
+  left: -12vw;
+}
+
+.stone-2 {
+  width: 36.1vw;
+  top: 29.8vw;
+  left: -12.5vw;
+}
+
+.stone-3 {
+  width: 40vw;
+  bottom: 43vw;
+  right: -8vw;
+}
+
+.stone-4 {
+  width: 17vw;
+  bottom: 24.6vw;
+  right: -1.8vw;
+}
+
+.stone-5 {
+  width: 54vw;
+  top: 27vw;
+  right: -18vw;
+}
+.section-2 {
+  position: relative;
+  overflow: hidden;
+  height: 25vw;
+  width: 100%;
+  background-image: url('../images/back-2.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5vw;
+}
+
+.running-line {
+  position: relative;
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5.8vw;
+}
+
+.line {
+  position: relative;
+  height: 4.5vw;
+  overflow: hidden;
+}
+
+.line p {
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  font-size: 3.75vw;
+  font-weight: 500;
+  color: white;
+  text-transform: none;
+  animation: run-line 14s linear infinite;
+}
+
+.line p:first-child {
+  left: 0;
+}
+
+.line p:last-child {
+  left: calc(100% + 7vw);
+}
+
+.line-2 p {
+  animation-direction: reverse;
+}
+
+.fade-word {
+  display: inline-block;
+  color: white;
+  animation: fade-word 5s ease-in-out infinite;
+}
+
+.main-blocks {
+  padding: 2.6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.top-blocks {
+  display: flex;
+  gap: 2vw;
+}
+
+.left-block,
+.right-block {
+  flex: 1;
+  height: 46.172vw;
+}
+
+.left-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #256aff, #0202e0);
+  border-bottom-right-radius: 6.25vw;
+  border-top-left-radius: 6.25vw;
+}
+
+.eye-container {
+  position: relative;
+  height: 30.832vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye {
+  width: 100%;
+  height: 100%;
+}
+
+.pupil {
+  position: absolute;
+  width: 15.578vw;
+  height: 15.578vw;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: movePupil 3.3s infinite alternate ease-in-out;
+}
+
+.pupil-img {
+  width: 100%;
+  height: 100%;
+}
+
+.blue-eye-stone {
+  position: absolute;
+  height: 12vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: glowAndShrink 5s infinite alternate;
+}
+
+.right-block {
+  position: relative;
+  height: 46.172vw;
+  background-image: url('../images/bk-block-right.svg');
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 6.25vw;
+  border-top-right-radius: 6.25vw;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #b6f6ff;
+  z-index: 0;
+  animation-name: bubbleFloat;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.circle-1 {
+  top: 14vw;
+  left: 2vw;
+  width: 3.047vw;
+  height: 3.047vw;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+
+.circle-2 {
+  top: 2vw;
+  right: -0.2vw;
+  width: 8.125vw;
+  height: 8.125vw;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+}
+
+.circle-3 {
+  top: 1vw;
+  left: 14vw;
+  width: 2.344vw;
+  height: 2.344vw;
+  animation-duration: 3.5s;
+  animation-delay: 1s;
+}
+
+.circle-4 {
+  top: 14vw;
+  left: 2vw;
+  width: 3.047vw;
+  height: 3.047vw;
+  animation-duration: 4.5s;
+  animation-delay: 0.7s;
+}
+
+.circle-5 {
+  top: 10.6vw;
+  right: -1vw;
+  width: 2.031vw;
+  height: 2.031vw;
+  animation-duration: 5.2s;
+  animation-delay: 0.2s;
+}
+
+.circle-6 {
+  top: 1vw;
+  right: 7.4vw;
+  width: 1.094vw;
+  height: 1.094vw;
+  animation-duration: 4.8s;
+  animation-delay: 1.2s;
+}
+
+.circle-7 {
+  top: 12.7vw;
+  right: 6vw;
+  width: 1.094vw;
+  height: 1.094vw;
+  animation-duration: 5s;
+  animation-delay: 0.9s;
+}
+
+.arch {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-53%, 0);
+  width: 42.798vw;
+  height: auto;
+}
+
+.white-stone,
+.white-stone-2 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  animation:
+    stoneMove 4s ease-in-out infinite,
+    stoneGlow 2s ease-in-out infinite alternate;
+  transform-origin: 50% 50%;
+}
+
+.white-stone {
+  top: 23%;
+  left: 32%;
+  width: 16vw;
+  height: auto;
+}
+
+.white-stone-2 {
+  top: 47%;
+  left: 56%;
+  width: 4vw;
+  height: auto;
+}
+
+.bottom-block {
+  background-image: url('../images/bk-block-bottom.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 6.25vw;
+  border-top-left-radius: 6.25vw;
+  background-color: #0800ff;
+  height: 35.234vw;
+  position: relative;
+}
+.stone-wrapper {
+  position: relative;
+  width: 87.305vw;
+  height: auto;
+  bottom: 25%;
+}
+
+.colored-stone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: switchStone 9s infinite;
+}
+
+.stone-6 {
+  animation-delay: 0s;
+}
+.stone-7 {
+  animation-delay: 3s;
+}
+.stone-8 {
+  animation-delay: 6s;
+}
+
+.section-4 {
+  position: relative;
+  overflow: hidden;
+  height: 52.109vw;
+  width: 100%;
+  background-image: url('../images/back-3.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5vw;
+}
+
+.pinkstone {
+  position: absolute;
+  height: auto;
+}
+.stone-item-9 {
+  width: 19.607vw;
+  top: 8vw;
+  left: 11.5vw;
+}
+
+.stone-item-10 {
+  width: 10.536vw;
+  top: 27vw;
+  left: 12vw;
+}
+
+.stone-item-11 {
+  width: 5vw;
+  bottom: 16vw;
+  left: 5.4vw;
+}
+
+.stone-item-12 {
+  width: 10.536vw;
+  top: 19vw;
+  left: 3vw;
+}
+
+.stone-item-13 {
+  width: 9.945vw;
+  top: 12vw;
+  right: 4.5vw;
+}
+
+.stone-item-14 {
+  width: 15.552vw;
+  top: 27vw;
+  right: 31vw;
+}
+
+.stone-item-15 {
+  width: 26.097vw;
+  top: 11vw;
+  right: 12vw;
+}
+
+.stone-item-16 {
+  width: 9.945vw;
+  top: 16vw;
+  right: 37vw;
+}
+
+.stone-item-17 {
+  width: 6.873vw;
+  bottom: 16vw;
+  right: 4.9vw;
+}
+
+.stone-item-18 {
+  width: 5.235vw;
+  bottom: 22.3vw;
+  right: 43.5vw;
+}
+
+.stone-item-19 {
+  width: 9.945vw;
+  bottom: 13vw;
+  left: 28vw;
+}
+.pinkstone {
+  position: absolute;
+  height: auto;
+  transform-origin: center center;
+  animation: floatAndGlow 6s ease-in-out infinite;
+}
+
+.stone-item-9 {
+  animation-delay: 0s;
+}
+.stone-item-10 {
+  animation-delay: 0.4s;
+}
+.stone-item-11 {
+  animation-delay: 0.8s;
+}
+.stone-item-12 {
+  animation-delay: 1.2s;
+}
+.stone-item-13 {
+  animation-delay: 1.6s;
+}
+.stone-item-14 {
+  animation-delay: 2s;
+}
+.stone-item-15 {
+  animation-delay: 2.4s;
+}
+.stone-item-16 {
+  animation-delay: 2.8s;
+}
+.stone-item-17 {
+  animation-delay: 3.2s;
+}
+.stone-item-18 {
+  animation-delay: 3.6s;
+}
+.stone-item-19 {
+  animation-delay: 4s;
+}
+
+.section-5 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 40.781vw;
+  background-image: url('../images/back-4.svg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 0.859vw;
+  display: flex;
+  gap: 0.5vw;
+  padding-left: 3vw;
+}
+
+.bigword {
+  position: relative;
+  width: 43.612vw;
+  transition: filter 0.5s ease-in-out;
+}
+
+.bigword:hover {
+  animation: bigWordGlow 2s ease-in-out infinite alternate;
+}
+
+.little-words {
+  position: relative;
+  width: 55vw;
+  height: 32vw;
+}
+
+.little-word {
+  position: absolute;
+  height: auto;
+}
+
+.lw-1 {
+  width: 4vw;
+  top: 5vw;
+  right: 20vw;
+}
+.lw-2 {
+  width: 6.8vw;
+  top: 9vw;
+  left: 22vw;
+}
+.lw-3 {
+  width: 6vw;
+  top: 14.2vw;
+  left: 16vw;
+}
+.lw-4 {
+  width: 12vw;
+  bottom: -0.2vw;
+  left: 7vw;
+}
+.lw-5 {
+  width: 6vw;
+  top: 3.9vw;
+  left: 11.3vw;
+}
+.lw-6 {
+  width: 12vw;
+  top: 11vw;
+  left: 1.3vw;
+}
+.lw-7 {
+  width: 7vw;
+  top: 7.6vw;
+  right: 6vw;
+}
+.lw-8 {
+  width: 8vw;
+  bottom: 6vw;
+  left: 21.2vw;
+}
+.lw-9 {
+  width: 3.4vw;
+  bottom: 2.7vw;
+  right: 20.2vw;
+}
+.lw-10 {
+  width: 10.2vw;
+  bottom: 2.5vw;
+  right: 2vw;
+}
+.lw-11 {
+  width: 10vw;
+  bottom: 10vw;
+  right: 12.3vw;
+}
+
+.little-word {
+  position: absolute;
+  height: auto;
+  opacity: 0;
+  animation: fallAppearFade 4s linear infinite;
+}
+
+.lw-1 {
+  animation-delay: 0s;
+}
+.lw-2 {
+  animation-delay: 0.5s;
+}
+.lw-3 {
+  animation-delay: 1s;
+}
+.lw-4 {
+  animation-delay: 1.5s;
+}
+.lw-5 {
+  animation-delay: 2s;
+}
+.lw-6 {
+  animation-delay: 2.5s;
+}
+.lw-7 {
+  animation-delay: 3s;
+}
+.lw-8 {
+  animation-delay: 3.5s;
+}
+.lw-9 {
+  animation-delay: 4s;
+}
+.lw-10 {
+  animation-delay: 4.5s;
+}
+.lw-11 {
+  animation-delay: 5s;
+}
+
+.section-6 {
+  position: relative;
+  overflow: hidden;
+  height: 48.125vw;
+  width: 100%;
+  background-image: url('../images/back-5.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin-top: 3.2vw;
+}
+
+/* Камень */
+.blue-stone {
+  width: 45vw;
+  height: auto;
+  z-index: 2;
+  animation: stoneGlow 8s ease-in-out infinite;
+}
+
+.ellipse-behind {
+  position: absolute;
+  width: 60vw;
+  height: auto;
+  z-index: 1;
+  transform: translate(-21%, -7%);
+  animation: ellipseFollow 8s ease-in-out infinite;
+}
+
+.stone-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5vw;
+  margin: 10.2vw -6.5vw;
+}
+
+.stone-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+.title-line {
+  display: flex;
+  align-items: center;
+  gap: 2.3vw;
+}
+
+.title-line h2 {
+  font-size: 3.75vw;
+  font-weight: 400;
+  color: white;
+  white-space: nowrap;
+}
+
+.divider {
+  width: 0.234vw;
+  height: 6.641vw;
+  background-color: #ffffff;
+}
+
+.stone-details {
+  font-size: 1.875vw;
+  font-weight: 300;
+  line-height: 3.125vw;
+  color: white;
+}
+.text-divider {
+  width: 58vw;
+  height: 0.2vw;
+  background: #fff;
+  margin: 0.4vw 0 6vw;
+}
+
+.progress-wrap {
+  width: 39.531vw;
+  height: 4.531vw;
+  background: #0202e0;
+  border-radius: 3vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: white;
+  border-radius: 3vw;
+  position: relative;
+  animation: fillMove 8s ease-in-out infinite;
+}
+
+.num {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.9vw;
+  font-weight: 500;
+  color: #0202e0;
+  opacity: 0;
+  animation: numberFade 8s ease-in-out infinite;
+}
+
+.n0 {
+  animation-delay: 1s;
+}
+.n72 {
+  animation-delay: 2.4s;
+}
+.n80 {
+  animation-delay: 3.8s;
+}
+.n100 {
+  animation-delay: 5.1s;
+}
+.n00 {
+  animation-delay: 6s;
+}
+
+.section-7 {
+  position: relative;
+  overflow: hidden;
+  height: 76.406vw;
+  width: 100%;
+  background-image: url('../images/back-6.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin-top: 3.2vw;
+}
+
+.ice-stone {
+  position: absolute;
+  width: 35vw;
+  height: auto;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  animation:
+    stoneFloat 4s ease-in-out infinite,
+    stoneGlow 2s ease-in-out infinite;
+}
+
+.hand {
+  position: absolute;
+  width: 75.455vw;
+  height: auto;
+  z-index: 1;
+  animation: handMove 4s ease-in-out infinite;
+}
+
+.hand-1 {
+  top: 19vw;
+  right: -15vw;
+  transform-origin: center center;
+}
+
+.hand-2 {
+  bottom: 20vw;
+  left: -16vw;
+  transform-origin: center center;
+}
+
+.snowflakes {
+  position: absolute;
+  width: 35vw;
+  height: auto;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  opacity: 0;
+  animation: snowTwinkle 6s ease-in-out infinite;
+}
+
+.section-8 {
+  width: 100%;
+  height: 16.328vw;
+  display: flex;
+  align-items: center;
+  gap: 14vw;
+  background-color: #ffffff;
+  padding: 0 4vw 0;
+}
+
+.footer-text {
+  font-size: 2.813vw;
+  font-weight: 400;
+  color: #0051ff;
+  white-space: nowrap;
+}
