@@ -35,23 +35,20 @@ body {
   background-image: url('../images/background-1.svg');
   background-size: cover;
   background-position: center;
-
   display: flex;
-  flex-direction: column; /* ставим друг под другом */
-
+  flex-direction: column;
   align-items: center;
 }
-/* Заголовки */
+
 h1,
 h2 {
   font-family: 'Gabin';
-  display: inline-block; /* чтобы transform работал */
+  display: inline-block;
   text-align: center;
   text-shadow: 0 0 18px rgba(255, 255, 255, 0.25);
   animation: soft-pulse 6s infinite alternate ease-in-out; /* медленная плавная пульсация */
 }
 
-/* Размеры и цвета */
 h1 {
   font-size: 11.875vw;
   color: #ded1f8;
@@ -69,25 +66,23 @@ h2 {
   }
   50% {
     transform: scale(1.02);
-  } /* очень мягкое увеличение */
+  }
   100% {
     transform: scale(1);
   }
 }
 
-/* Каждая буква */
 .glow-text span {
   transition:
     0.3s ease color,
     0.3s ease text-shadow;
 }
 
-/* Постоянное лёгкое затемнение букв */
 .glow-text span.dim {
   color: #ded1f85d;
   text-shadow: none;
 }
-.section-1 > div {
+/* .section-1 > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -687,7 +682,6 @@ h2 {
   margin-top: 3.2vw;
 }
 
-/* Камень */
 .blue-stone {
   width: 45vw;
   height: auto;
@@ -869,4 +863,4 @@ h2 {
   font-weight: 400;
   color: #0051ff;
   white-space: nowrap;
-}
+} */
