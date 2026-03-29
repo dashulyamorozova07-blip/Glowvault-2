@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="javascripts/scripts.js"></script>
+    <script src="javascripts/scripts.js" defer></script>
     <title>Путешествие за камнями света</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon-1.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.png" type="image/x-png" />
   </head>
   <body>
@@ -14,6 +14,339 @@
     <section class="section-1">
       <h1 class="glow-text">ПУТЕШЕСТВИЕ</h1>
       <h2 class="glow-text">ЗА КАМНЯМИ СВЕТА</h2>
+      <div class="stars">
+        <img src="./images/star-1.png" alt="звезда-1" class="star star-1" />
+        <img src="./images/star-2.png" alt="звезда-2" class="star star-2" />
+        <img src="./images/star-3.png" alt="звезда-3" class="star star-3" />
+        <img src="./images/star-4.png" alt="звезда-4" class="star star-4" />
+        <img src="./images/star-5.png" alt="звезда-5" class="star star-5" />
+        <img src="./images/star-6.png" alt="звезда-6" class="star star-6" />
+        <img src="./images/star-7.png" alt="звезда-7" class="star star-7" />
+        <img src="./images/star-8.png" alt="звезда-8" class="star star-8" />
+        <img src="./images/star-9.png" alt="звезда-9" class="star star-9" />
+        <img src="./images/star-10.png" alt="звезда-10" class="star star-10" />
+        <img src="./images/star-11.png" alt="звезда-11" class="star star-11" />
+        <img src="./images/star-12.png" alt="звезда-12" class="star star-12" />
+        <img src="./images/star-13.png" alt="звезда-13" class="star star-13" />
+        <img src="./images/star-14.png" alt="звезда-14" class="star star-14" />
+        <img src="./images/star-15.png" alt="звезда-15" class="star star-15" />
+        <img src="./images/star-16.png" alt="звезда-16" class="star star-16" />
+      </div>
+      <div class="mimi"></div>
+      <div class="speech">
+        <p id="speechText">ПРИВЕТ! МЕНЯ ЗОВУТ МИМИ</p>
+        <button id="speechBtn" class="speech__btn" aria-label="Дальше">
+          <img src="./images/check.svg" alt="" />
+        </button>
+      </div>
+      <div class="flower-swap">
+        <img
+          src="./images/flowers-1.png"
+          alt="цветок-1"
+          class="flower-img f1"
+        />
+        <img
+          src="./images/flowers-2.png"
+          alt="цветок-2"
+          class="flower-img f2"
+        />
+      </div>
     </section>
+    <!-- секция 2 -->
+    <section class="section-2" id="section-2">
+      <div class="stones-cloud">
+        <img
+          src="./images/Stone-1.png"
+          alt="камень-1"
+          class="stone stone-1"
+          data-group="1"
+        />
+        <img
+          src="./images/Stone-2.png"
+          alt="камень-2"
+          class="stone stone-2"
+          data-group="2"
+        />
+        <img
+          src="./images/Stone-3.png"
+          alt="камень-3"
+          class="stone stone-3"
+          data-group="3"
+        />
+        <img
+          src="./images/Stone-4.png"
+          alt="камень-4"
+          class="stone stone-4"
+          data-group="4"
+        />
+      </div>
+
+      <div class="stones-stars">
+        <img
+          src="./images/star-17.png"
+          alt=""
+          class="stone-star s1-1"
+          data-group="1"
+        />
+        <img
+          src="./images/star-18.png"
+          alt=""
+          class="stone-star s1-2"
+          data-group="1"
+        />
+
+        <img
+          src="./images/star-17.png"
+          alt=""
+          class="stone-star s2-1"
+          data-group="2"
+        />
+        <img
+          src="./images/star-18.png"
+          alt=""
+          class="stone-star s2-2"
+          data-group="2"
+        />
+        <img
+          src="./images/star-19.png"
+          alt=""
+          class="stone-star s2-3"
+          data-group="2"
+        />
+
+        <img
+          src="./images/star-17.png"
+          alt=""
+          class="stone-star s3-1"
+          data-group="3"
+        />
+        <img
+          src="./images/star-18.png"
+          alt=""
+          class="stone-star s3-2"
+          data-group="3"
+        />
+        <img
+          src="./images/star-19.png"
+          alt=""
+          class="stone-star s3-3"
+          data-group="3"
+        />
+
+        <img
+          src="./images/star-17.png"
+          alt=""
+          class="stone-star s4-1"
+          data-group="4"
+        />
+        <img
+          src="./images/star-18.png"
+          alt=""
+          class="stone-star s4-2"
+          data-group="4"
+        />
+        <img
+          src="./images/star-19.png"
+          alt=""
+          class="stone-star s4-3"
+          data-group="4"
+        />
+      </div>
+    </section>
+    <!-- секция 3 -->
+    <section class="section-3" id="section-3">
+      <img src="./images/spider.png" alt="паук" class="spider-1" />
+      <img src="./images/item-1.png" alt="зелье" class="item item-1" />
+      <img
+        src="./images/item-2.png"
+        alt="волшебное кольцо"
+        class="item item-2"
+      />
+      <img src="./images/item-3.png" alt="шар" class="item item-3" />
+      <img src="./images/item-4.png" alt="шляпа" class="item item-4" />
+      <img src="./images/item-5.png" alt="песочные часы" class="item item-5" />
+      <img src="./images/books.png" alt="книги" class="item item-books" />
+      <img src="./images/book-1.png" alt="книга" class="item item-book-1" />
+      <img src="./images/book-2.png" alt="книга" class="item item-book-2" />
+
+      <img src="./images/stone-5.png" alt="камень-5" class="stone-5" />
+      <img src="./images/stone-6.png" alt="камень-6" class="stone-6" />
+
+      <button
+        class="help-btn"
+        data-hint="Внимательно осмотри полки и отыщи спрятанные камни."
+      >
+        <img src="./images/hint.png" alt="" />
+      </button>
+    </section>
+    <!-- секция 4 -->
+    <section class="section-4" id="section-4">
+      <div class="puzzle">
+        <!-- Цельный камень -->
+        <img src="./images/stone-full..png" class="stone-full" alt="" />
+        <img
+          src="./images/part-1.png"
+          class="piece p1"
+          data-start-x="29"
+          data-start-y="15"
+          data-target-x="45.4"
+          data-target-y="35.6"
+          data-start-x-1440="32.2"
+          data-start-y-1440="21.7"
+          data-start-x-402="20.9"
+          data-start-y-402="21.7"
+          data-target-x-402="42.9"
+          data-target-y-402="41.7"
+          alt=""
+        />
+
+        <img
+          src="./images/part-2.png"
+          class="piece p2"
+          data-start-x="31"
+          data-start-y="47.4"
+          data-target-x="35.3"
+          data-target-y="36.4"
+          data-start-x-1440="34.2"
+          data-start-y-1440="50.2"
+          data-start-x-402="23.2"
+          data-start-y-402="52.3"
+          data-target-x-402="26.9"
+          data-target-y-402="42.1"
+          alt=""
+        />
+
+        <img
+          src="./images/part-3.png"
+          class="piece p3"
+          data-start-x="46"
+          data-start-y="43"
+          data-target-x="36.6"
+          data-target-y="24.0"
+          data-start-x-1440="47.6"
+          data-start-y-1440="46.6"
+          data-start-x-402="48.9"
+          data-start-y-402="59.3"
+          data-target-x-402="28.9"
+          data-target-y-402="33.8"
+          alt=""
+        />
+
+        <img
+          src="./images/part-4.png"
+          class="piece p4"
+          data-start-x="53"
+          data-start-y="21"
+          data-target-x="45.7"
+          data-target-y="22.2"
+          data-start-x-1440="53.4"
+          data-start-y-1440="26.5"
+          data-start-x-402="43.9"
+          data-start-y-402="32.1"
+          data-target-x-402="42.9"
+          data-target-y-402="32.5"
+          alt=""
+        />
+      </div>
+      <div class="circles">
+        <img src="./images/circle-1.png" class="circle c1" alt="" />
+        <img src="./images/circle-2.png" class="circle c2" alt="" />
+        <img src="./images/circle-3.png" class="circle c3" alt="" />
+        <img src="./images/circle-4.png" class="circle c4" alt="" />
+        <img src="./images/circle-5.png" class="circle c5" alt="" />
+        <img src="./images/circle-6.png" class="circle c6" alt="" />
+        <img src="./images/circle-7.png" class="circle c7" alt="" />
+        <img src="./images/circle-8.png" class="circle c8" alt="" />
+        <img src="./images/circle-9.png" class="circle c9" alt="" />
+        <img src="./images/circle-10.png" class="circle c10" alt="" />
+      </div>
+
+      <button
+        class="help-btn"
+        data-hint="Камень любви расколот. Собери его, пока свет не угас."
+      >
+        <img src="./images/hint.png" alt="" />
+      </button>
+    </section>
+    <!-- секция 5 -->
+    <section class="section-5" id="section-5">
+      <div class="boxes">
+        <div class="box-card">
+          <img src="./images/box-1.png" alt="" class="box-frame" />
+          <img src="./images/stone-8.png" alt="" class="box-stone stone-8" />
+
+          <div class="box-controls">
+            <button class="arrow-btn" data-rotate="-15" aria-label="prev">
+              <img src="./images/arrow-left.png" alt="" />
+            </button>
+            <button class="arrow-btn" data-rotate="15" aria-label="next">
+              <img src="./images/arrow-right.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="box-card">
+          <img src="./images/box-1.png" alt="" class="box-frame" />
+          <img src="./images/stone-9.png" alt="" class="box-stone stone-9" />
+          <div class="box-controls">
+            <button class="arrow-btn" data-rotate="-15" aria-label="prev">
+              <img src="./images/arrow-left.png" alt="" />
+            </button>
+            <button class="arrow-btn" data-rotate="15" aria-label="next">
+              <img src="./images/arrow-right.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="box-card">
+          <img src="./images/box-1.png" alt="" class="box-frame" />
+          <img src="./images/stone-10.png" alt="" class="box-stone stone-10" />
+          <div class="box-controls">
+            <button class="arrow-btn" data-rotate="-15" aria-label="prev">
+              <img src="./images/arrow-left.png" alt="" />
+            </button>
+            <button class="arrow-btn" data-rotate="15" aria-label="next">
+              <img src="./images/arrow-right.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="help-btn"
+        data-hint="Попробуй повернуть камень. В правильном положении он&nbsp;покажет свой свет."
+      >
+        <img src="./images/hint.png" alt="" />
+      </button>
+      <div class="final-overlay" id="finalOverlay" aria-hidden="true">
+        <div class="final-modal">
+          <img src="./images/final-window.png" alt="" class="final-bg" />
+          <p class="final-text">ВАУ! ТЫ СОБРАЛ ВСЕ КАМНИ СВЕТА! СПАСИБО!</p>
+        </div>
+      </div>
+    </section>
+    <!-- секция 6 -->
+    <section class="section-6" id="section-6">
+      <div class="section-6__content">
+        <p>МОРОЗОВА ДАРЬЯ</p>
+        <img src="./images/pipe.png" alt="" class="section-6__sep" />
+        <p>Б25Д311</p>
+        <img src="./images/pipe.png" alt="" class="section-6__sep" />
+        <p>ВЕБ‑ПЛАКАТ</p>
+      </div>
+    </section>
+    <!-- окно подсказки -->
+    <div class="hint-overlay" id="hintOverlay" aria-hidden="true">
+      <div class="hint-modal">
+        <p id="hintText"></p>
+      </div>
+    </div>
+    <audio id="bg-music" src="./sounds/bg-music.mp3" loop></audio>
+    <audio id="spider-sfx" src="./sounds/spider-squeak.mp3"></audio>
+    <audio id="stone-found-sfx" src="./sounds/stone-found.mp3"></audio>
+    <audio id="star-sfx" src="./sounds/star-click.mp3"></audio>
+    <audio
+      id="stone-complete-sfx"
+      src="./sounds/stone-complete.mp3"
+      preload="auto"
+    ></audio>
+    <audio id="final-sfx" src="./sounds/final-win.mp3" preload="auto"></audio>
   </body>
 </html>
